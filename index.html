@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>karma</title>
+  <script type="text/javascript" src="node_modules/vue/dist/vue.js"></script>
+  <script type="text/javascript" src="src/container/Menu.js"></script>
+</head>
+<body>
+  <div id="vue">
+    <testing-menu :items="items"></testing-menu>
+  </div>
+  <script type="text/javascript">
+    var vue = new Vue({
+      el: '#vue',
+      data: {
+        items: [
+          {name: 'java', text: 'Java'},
+          {name: 'c', text: 'C'}
+        ]
+      }
+    })
+  </script>
+</body>
+</html>
